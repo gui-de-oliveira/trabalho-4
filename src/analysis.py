@@ -71,10 +71,11 @@ def question3e():
 
 
 def question6():
-    answerEpsilon = None
-    answerLearningRate = None
-    return answerEpsilon, answerLearningRate
-    # If not possible, return 'NOT POSSIBLE'
+    # Acho que não é possível pq a chance dele ir pro caminho ótimo consistentemente
+    # em menos de 50 iterações pois a chance dele pegar 5 esquerdas seguidas é de (0.25)^5,
+    # ou seja, 1 em 1024. É muito mais provável que ele encontre o caminho mais próximo primeiro
+    # ou caia da ponte
+    return 'NOT POSSIBLE'
 
 
 if __name__ == '__main__':
