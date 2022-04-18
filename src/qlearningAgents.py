@@ -156,9 +156,9 @@ class QLearningAgent(ReinforcementAgent):
             return None
 
         if(self.epsilon > random.random()):
-            return random.choices(legalActions)
+            return random.choice(legalActions)
 
-        return self.computeActionFromQValues(legalActions)
+        return self.computeActionFromQValues(state)
 
     def update(self, state, action, nextState, reward):
         """
